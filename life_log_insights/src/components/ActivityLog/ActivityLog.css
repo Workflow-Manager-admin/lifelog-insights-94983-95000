@@ -1,0 +1,94 @@
+/* ActivityLog component styles */
+
+.activity-log {
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.activity-log-header {
+  margin-bottom: 24px;
+}
+
+.activity-log-header h2 {
+  font-size: 1.8rem;
+  margin-bottom: 8px;
+  color: var(--kavia-orange);
+}
+
+.activity-log-header p {
+  color: var(--text-secondary);
+  font-size: 1rem;
+}
+
+.activity-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.form-control {
+  background-color: var(--kavia-dark);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  padding: 10px 12px;
+  font-size: 1rem;
+  color: var(--text-color);
+  transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: var(--kavia-orange);
+  outline: none;
+}
+
+.form-control::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.form-note {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin-top: 4px;
+}
+
+.error-message {
+  background-color: rgba(234, 67, 53, 0.1);
+  color: #EA4335;
+  padding: 12px;
+  border-radius: 4px;
+  border-left: 4px solid #EA4335;
+}
+
+.success-message {
+  background-color: rgba(52, 168, 83, 0.1);
+  color: #34A853;
+  padding: 12px;
+  border-radius: 4px;
+  border-left: 4px solid #34A853;
+}
+
+/* Select box styling */
+select.form-control {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='white' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+  background-repeat: no-repeat;
+  background-position-x: calc(100% - 12px);
+  background-position-y: center;
+  padding-right: 36px;
+}
