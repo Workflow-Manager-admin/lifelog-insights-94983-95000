@@ -1,0 +1,129 @@
+/* MoodTracker component styles */
+.mood-tracker {
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.mood-tracker-header {
+  margin-bottom: 24px;
+}
+
+.mood-tracker-header h2 {
+  font-size: 1.8rem;
+  margin-bottom: 8px;
+  color: var(--kavia-orange);
+}
+
+.mood-tracker-header p {
+  color: var(--text-secondary);
+  font-size: 1rem;
+}
+
+.mood-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Mood level selector */
+.mood-level-selector {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.mood-level-btn {
+  flex: 1;
+  min-width: 80px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: var(--text-color);
+}
+
+.mood-level-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: var(--hover-color, var(--kavia-orange));
+}
+
+.mood-level-btn.selected {
+  background-color: rgba(var(--selected-color, var(--kavia-orange)), 0.2);
+  border-color: var(--selected-color, var(--kavia-orange));
+}
+
+.mood-emoji {
+  font-size: 2rem;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.mood-label {
+  font-size: 0.9rem;
+}
+
+/* Mood factors grid */
+.mood-factors-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.mood-factor-btn {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: var(--text-color);
+}
+
+.mood-factor-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: var(--kavia-orange);
+}
+
+.mood-factor-btn.selected {
+  background-color: rgba(232, 122, 65, 0.2);
+  border-color: var(--kavia-orange);
+}
+
+.factor-emoji {
+  font-size: 1.5rem;
+}
+
+.factor-label {
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .mood-level-selector {
+    flex-direction: column;
+  }
+  
+  .mood-level-btn {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  
+  .mood-factors-grid {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  }
+}
