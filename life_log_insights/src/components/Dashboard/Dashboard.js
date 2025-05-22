@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { formatDate, getToday, getISODateString } from '../../utils/dateUtils';
+import { formatDate, getToday } from '../../utils/dateUtils';
 import { getActivitiesForDate, getMoodForDate } from '../../utils/dataUtils';
 import { getActivityCategory } from '../../models/activityModel';
 import { getMoodLevel } from '../../models/moodModel';
